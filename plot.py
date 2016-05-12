@@ -22,6 +22,7 @@ def getShift(Msg_Freq,Enc_Msg_Freq):
 	msgMax = max(Msg_Freq.iteritems(), key=operator.itemgetter(1))[0]
 	encMsgMax = max(Enc_Msg_Freq.iteritems(), key=operator.itemgetter(1))[0]
 	return (encMsgMax - msgMax)
+
 def plot(msg,enc):
 	fig = plt.figure()
 	Freq = calculateFreq(msg)
